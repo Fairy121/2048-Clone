@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+body {
+  margin: 20px;
+}
+* {
+  transition: 0.5s all;
+}
+
+.game-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 30vw;
+  height: 30vw;
+}
+.game-container {
+  background: #7498a6;
+  height: 100%;
+  display: grid;
+  grid-gap: 10px;
+  padding: 10px;
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+.box {
+  background-color: #97c1d1;
+  color: #38302c;
+  font-family: sans-serif;
+
+  position: relative;
+}
+
+.item > p {
+  text-align: center;
+}
+.gameOver {
+  position: absolute;
+  background: #66bcde;
+
+  text-align: center;
+  padding-top: 50px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  width: 100%;
+  height: 100%;
+  font-weight: 700;
+  font-size: 25px;
+  opacity: 0.9;
+}
+.restart-btn {
+  border-style: None;
+  background: #4296b8;
+  font-size: 20px;
+  width: 50%;
+  margin-top: 30px;
+  padding: 15px 0px;
+}
+.value {
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-weight: bold;
+}
+.box-inner {
+  height: 100%;
+  position: relative;
+  font-size: 45px;
+  transition: 0.5s;
+  transition-property: transform;
+}
+.title {
+  font-weight: bold;
+  color: #38302c;
+  font-size: 40px;
+}
+
+/* COLORS */
+.filled-2 {
+  /* background: #a8a2a0; */
+  background: #b1e0f2;
+}
+.filled-4 {
+  background: #8ec8de;
+}
+.filled-8 {
+  background: #5ea9c4;
+  color: white;
+}
+.filled-16 {
+  background: #4e8296;
+  color: white;
+}
+.filled-32 {
+  background: #447485;
+  color: white;
+}
+.filled-64 {
+  background: #274e5c;
+  color: white;
+}
+.filled-128 {
+  background: #4358bf;
+  color: white;
+}
+.filled-256 {
+  background: #59c0c2;
+  color: white;
+  font-size: 39px;
+}
+.filled-512 {
+  background: #51c9b5;
+  color: white;
+}
+.filled-1024 {
+  background: #3fd9bf;
+  color: white;
+  font-size: 28px;
+}
+.filled-2048 {
+  background: #33f2a6;
+
+  color: white;
+  font-size: 28px;
+}
+.filled-super {
+  background: #3c3a32;
+  color: white;
+  font-size: 26px;
+}
